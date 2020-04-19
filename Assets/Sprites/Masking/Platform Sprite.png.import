@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ledge.png-2652b19e4f2514e98c5f75a20455ffee.stex"
+path="res://.import/Platform Sprite.png-f2fbde901351f4a9cb8b04cadbb5262d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Masking/ledge.png"
-dest_files=[ "res://.import/ledge.png-2652b19e4f2514e98c5f75a20455ffee.stex" ]
+source_file="res://Assets/Sprites/Masking/Platform Sprite.png"
+dest_files=[ "res://.import/Platform Sprite.png-f2fbde901351f4a9cb8b04cadbb5262d.stex" ]
 
 [params]
 
