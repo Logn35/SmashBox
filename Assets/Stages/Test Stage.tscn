@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Stage Tiles/SolidTiles.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Stage Tiles/Ledge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Stage Tiles/Platform Block.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Stage Tiles/PlayerSpawner.tscn" type="PackedScene" id=4]
 
 [node name="Test Stage" type="Node2D"]
 
@@ -26,3 +27,15 @@ position = Vector2( 368, 144 )
 
 [node name="Ledge2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 112, 144 )
+
+[node name="PlayerSpawner" parent="." instance=ExtResource( 4 )]
+position = Vector2( 176, 144 )
+
+[node name="PlayerSpawner2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 304, 144 )
+
+[node name="PlayerSpawner3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 128, 128 )
+
+[node name="PlayerSpawner4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 352, 128 )
