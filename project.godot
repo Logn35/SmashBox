@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Smashbox"
-run/main_scene="res://Assets/Stages/Test Stage.tscn"
+run/main_scene="res://Stages/Test Stage.tscn"
 config/icon="res://icon.png"
 
 [display]
