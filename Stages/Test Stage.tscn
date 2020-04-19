@@ -60,9 +60,6 @@ position = Vector2( 384, 144 )
 [node name="TestCharacter" parent="." instance=ExtResource( 5 )]
 position = Vector2( 145, 129 )
 
-[node name="TestCharacter" parent="TestCharacter" instance=ExtResource( 5 )]
-position = Vector2( 178, 3 )
-
 [node name="Game Engine" parent="." instance=ExtResource( 6 )]
 position = Vector2( 8, 8 )
 
