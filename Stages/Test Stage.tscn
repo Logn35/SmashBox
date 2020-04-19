@@ -21,8 +21,8 @@ position = Vector2( 248, 120 )
 [node name="Platform Block4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 264, 120 )
 
-[node name="Ledge" parent="Platform Block4" instance=ExtResource( 2 )]
-position = Vector2( -152, 24 )
-
 [node name="Ledge" parent="." instance=ExtResource( 2 )]
 position = Vector2( 368, 144 )
+
+[node name="Ledge2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 112, 144 )
