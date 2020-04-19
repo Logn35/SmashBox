@@ -8,15 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "bass_class",
+"language": "GDScript",
+"path": "res://scripts/bass_class.gd"
+} ]
 _global_script_class_icons={
-
+"bass_class": ""
 }
 
 [application]
 
 config/name="Smashbox"
-run/main_scene="res://Stages/Test Stage.tscn"
+run/main_scene="res://Assets/Stages/Test Stage.tscn"
 config/icon="res://icon.png"
 
 [display]
