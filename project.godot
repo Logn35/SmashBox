@@ -16,13 +16,19 @@ _global_script_class_icons={
 [application]
 
 config/name="Smashbox"
+run/main_scene="res://Stages/Test Stage.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=480
+window/size/height=270
+window/size/test_width=1280
+window/size/test_height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"
