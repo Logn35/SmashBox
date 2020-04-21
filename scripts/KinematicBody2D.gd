@@ -1,15 +1,15 @@
 extends KinematicBody2D
 
 const up = Vector2(0, -1)
-const acceleration = 50
-const gravity = 500
+const acceleration = 10
+const gravity = 50
 const maxspeed = 500
-const jumpHeight = -10000
+const jumpHeight = -1000
 
 var motion = Vector2()
 
 func _physics_process(delta):
-	motion.y =+ gravity
+	motion.y += gravity
 	
 	if Input.is_action_pressed("moveRight"):
 		motion.x = min(motion.x+acceleration, maxspeed)
