@@ -48,7 +48,6 @@ script = ExtResource( 2 )
 [node name="Character Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 1
 playing = true
 
 [node name="CollisionMask" type="CollisionShape2D" parent="."]
@@ -56,6 +55,6 @@ shape = SubResource( 2 )
 
 [node name="Hurtbox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+[node name="HurtboxMask" type="CollisionShape2D" parent="Hurtbox"]
 scale = Vector2( 0.963141, 1 )
 shape = SubResource( 3 )

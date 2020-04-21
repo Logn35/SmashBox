@@ -21,12 +21,21 @@ extents = Vector2( 62.1823, 7.70822 )
 [node name="Test Stage" type="Node2D"]
 script = ExtResource( 8 )
 
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 481, 273 )
+scale = Vector2( 1.00104, 1.0037 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -0.165924, -69.0209 )
+shape = SubResource( 1 )
+one_way_collision = true
+
 [node name="3d Background" parent="." instance=ExtResource( 11 )]
 transparent_bg = true
 render_target_v_flip = true
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 495.337, 267.97 )
+position = Vector2( 495, 268 )
 scale = Vector2( 2.58335, 2.58335 )
 texture = ExtResource( 12 )
 
@@ -36,17 +45,11 @@ scale = Vector2( 0.679684, 0.671373 )
 texture = ExtResource( 10 )
 
 [node name="Test Stage Background" type="Sprite" parent="."]
-position = Vector2( 481, 272 )
+position = Vector2( 480, 273 )
 texture = ExtResource( 9 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Test Stage Background"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Test Stage Background/StaticBody2D"]
-position = Vector2( -0.165924, -69.0209 )
-shape = SubResource( 1 )
-one_way_collision = true
-
 [node name="SolidTiles" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 1 )
 cell_size = Vector2( 32, 32 )
 tile_data = PoolIntArray( 655364, 4, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 0, 0, 655382, 0, 0, 655383, 0, 0, 655384, 0, 0, 655385, 3, 0, 720901, 4, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 720912, 0, 0, 720913, 0, 0, 720914, 0, 0, 720915, 0, 0, 720916, 0, 0, 720917, 0, 0, 720918, 0, 0, 720919, 0, 0, 720920, 3, 0, 786441, 4, 0, 786442, 0, 0, 786443, 0, 0, 786444, 0, 0, 786445, 0, 0, 786446, 0, 0, 786447, 0, 0, 786448, 0, 0, 786449, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 3, 0, 851979, 4, 0, 851980, 0, 0, 851981, 0, 0, 851982, 0, 0, 851983, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 3, 0 )
 
@@ -116,5 +119,5 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="Test Stage Foreground" type="Sprite" parent="."]
-position = Vector2( 480, 272 )
+position = Vector2( 480, 273 )
 texture = ExtResource( 7 )

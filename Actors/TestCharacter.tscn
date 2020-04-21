@@ -45,6 +45,8 @@ height = 24.0
 collision_mask = 2
 script = ExtResource( 2 )
 
+[node name="Dust Container" type="Node2D" parent="."]
+
 [node name="Character Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
@@ -56,6 +58,6 @@ shape = SubResource( 2 )
 
 [node name="Hurtbox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+[node name="HurtboxMask" type="CollisionShape2D" parent="Hurtbox"]
 scale = Vector2( 0.963141, 1 )
 shape = SubResource( 3 )
