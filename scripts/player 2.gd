@@ -23,6 +23,7 @@ func _physics_process(delta):
 		friction = true
 		
 	if is_on_floor():
+		$"Character Sprite".play("Idle")
 		if Input.is_action_pressed("ui_up"):
 			motion.y = jumpHeight
 		if friction == true:
