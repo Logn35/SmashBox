@@ -12,6 +12,8 @@ height = 24.0
 
 [node name="TestCharacter" type="KinematicBody2D"]
 script = ExtResource( 2 )
+speed = null
+gravity = null
 
 [node name="Character Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -22,4 +24,5 @@ shape = SubResource( 1 )
 [node name="Hurtbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+scale = Vector2( 0.963141, 1 )
 shape = SubResource( 2 )
