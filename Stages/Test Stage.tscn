@@ -12,14 +12,14 @@
 [ext_resource path="res://Assets/Sprites/Masking/Platform Sprite.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Object Test.png" type="Texture" id=11]
 
-[sub_resource type="Environment" id=2]
+[sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )
 tonemap_mode = 3
 glow_intensity = 2.99
 
-[sub_resource type="CylinderMesh" id=3]
+[sub_resource type="CylinderMesh" id=2]
 
-[sub_resource type="SpatialMaterial" id=5]
+[sub_resource type="SpatialMaterial" id=3]
 flags_transparent = true
 params_diffuse_mode = 4
 albedo_texture = ExtResource( 11 )
@@ -27,7 +27,7 @@ uv1_scale = Vector3( 20, 100, 20 )
 uv1_triplanar_sharpness = 2.2974
 uv2_scale = Vector3( 100, 100, 100 )
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="SpatialMaterial" id=4]
 flags_transparent = true
 albedo_texture = ExtResource( 11 )
 uv1_scale = Vector3( 20, 100, 20 )
@@ -110,14 +110,14 @@ render_target_v_flip = true
 fov = 97.2
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="3d Background/Background"]
-environment = SubResource( 2 )
+environment = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="3d Background/Background"]
 transform = Transform( 0.0936613, 11.2844, 0.546617, -0.885289, 4.35036, -0.336673, -0.455511, -6.13468, 0.766721, 2.86285, 3.39039, 4.35112 )
 visible = false
 cast_shadow = 0
-mesh = SubResource( 3 )
-material/0 = SubResource( 5 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
 
 [node name="CSGTorus" type="CSGTorus" parent="3d Background/Background"]
 transform = Transform( 1.00002, 0, 0, 0, -4.69977e-06, -1, 0, 28.847, -1.62921e-07, 0, 0, -10 )
@@ -125,4 +125,4 @@ calculate_tangents = false
 invert_faces = true
 inner_radius = 1.0
 outer_radius = 2.0
-material = SubResource( 6 )
+material = SubResource( 4 )

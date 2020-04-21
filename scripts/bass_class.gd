@@ -6,6 +6,10 @@ class_name bass_class
 export var speed: = Vector2(100.0, 1000.0)
 export var gravity: = 3000.0
 
+export var speed_y = 0
+
+const jumpForce = 800
+
 # velocity garbage ill remake this later
 var velocity: = Vector2.ZERO
 
@@ -13,3 +17,5 @@ var velocity: = Vector2.ZERO
 func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
 	velocity = move_and_slide(velocity)
+	speed_y += gravity * delta
+	velocity.y = speed_y * delta

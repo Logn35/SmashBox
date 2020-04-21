@@ -6,3 +6,9 @@ func _physics_process(delta: float) -> void:
 			0.0
 	)
 	velocity = speed * direction
+
+
+func _input(event):
+	if event.is_action_pressed("jump"):
+		speed_y = -jumpForce
+	pass
