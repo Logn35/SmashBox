@@ -80,9 +80,9 @@ position = Vector2( 384, 144 )
 [node name="Game Engine" parent="." instance=ExtResource( 6 )]
 position = Vector2( 244, 139 )
 
+[node name="TestCharacter" parent="." instance=ExtResource( 5 )]
+position = Vector2( 276.674, 231.353 )
+
 [node name="Test Stage Foreground" type="Sprite" parent="."]
 position = Vector2( 480, 272 )
 texture = ExtResource( 7 )
-
-[node name="TestCharacter" parent="." instance=ExtResource( 5 )]
-position = Vector2( 276.674, 231.353 )
