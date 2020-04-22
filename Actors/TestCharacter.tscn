@@ -23,14 +23,14 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "Fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Fall",
 "speed": 5.0
 } ]
 
@@ -50,7 +50,6 @@ script = ExtResource( 2 )
 [node name="Character Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 3
 playing = true
 
 [node name="CollisionMask" type="CollisionShape2D" parent="."]
