@@ -5,6 +5,7 @@ const acceleration = 90
 const gravity = 50
 const maxspeed = 400
 const jumpHeight = -1000
+export var active = true
 
 var motion = Vector2()
 
@@ -43,3 +44,8 @@ func _physics_process(delta):
 	motion = move_and_slide(motion, up)
 	pass
 
+func _on_VisibilityNotifier2D_screen_entered():
+	active = true
+
+func _on_VisibilityNotifier2D_screen_exited():
+	active = false
