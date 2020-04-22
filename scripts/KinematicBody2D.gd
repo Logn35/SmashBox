@@ -8,6 +8,8 @@ const gravity = 50
 const maxspeed = 400
 const jumpHeight = -1000
 
+var jumpCount = 0
+
 var motion = Vector2()
 
 	#Particles
@@ -28,9 +30,13 @@ func _physics_process(delta):
 		friction = true
 		
 	if is_on_floor():
+		jumpCount = 0
 		$"Character Sprite".play("Idle")
-		if Input.is_action_pressed("jump"):
-			motion.y = jumpHeight
+		if Input.is_action_pressed("ui_select"):
+			if jumpCount < 2:
+				jumpCount += 1
+				motion.y = jumpHeight
+
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.2)
 			
