@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Stage Tiles/SolidTiles.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Stage Tiles/Ledge.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Stage Tiles/PlatformBlock.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Stage Tiles/PlayerSpawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Actors/TestCharacter.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Game Engine Objects/Game Engine.tscn" type="PackedScene" id=6]
@@ -23,7 +22,7 @@ transparent_bg = true
 render_target_v_flip = true
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 495, 268 )
+position = Vector2( 494, 268 )
 scale = Vector2( 2.58335, 2.58335 )
 texture = ExtResource( 12 )
 
@@ -41,45 +40,29 @@ tile_data = PoolIntArray( 655365, 4, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0
 position = Vector2( 480, 273 )
 texture = ExtResource( 9 )
 
-[node name="Platform Block" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 427, 200 )
-
-[node name="Platform Block2" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 459, 200 )
-
-[node name="Platform Block3" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 485, 200 )
-
-[node name="Platform Block4" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 517, 200 )
-
 [node name="Ledge" parent="." instance=ExtResource( 2 )]
 visible = false
-position = Vector2( 416, 160 )
+position = Vector2( 797, 323 )
 
 [node name="Ledge2" parent="." instance=ExtResource( 2 )]
 visible = false
-position = Vector2( 64, 160 )
+position = Vector2( 161, 322 )
 
 [node name="PlayerSpawner" parent="." instance=ExtResource( 4 )]
 visible = false
-position = Vector2( 176, 144 )
+position = Vector2( 390, 307 )
 
 [node name="PlayerSpawner2" parent="." instance=ExtResource( 4 )]
 visible = false
-position = Vector2( 304, 144 )
+position = Vector2( 550, 307 )
 
 [node name="PlayerSpawner3" parent="." instance=ExtResource( 4 )]
 visible = false
-position = Vector2( 96, 144 )
+position = Vector2( 233, 307 )
 
 [node name="PlayerSpawner4" parent="." instance=ExtResource( 4 )]
 visible = false
-position = Vector2( 384, 144 )
+position = Vector2( 726, 307 )
 
 [node name="Game Engine" parent="." instance=ExtResource( 6 )]
 position = Vector2( 244, 139 )
@@ -105,6 +88,8 @@ drag_margin_right = 0.31
 drag_margin_bottom = 0.23
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="TestCharacter/Camera2D2"]
 
 [node name="Test Stage Foreground" type="Sprite" parent="."]
 position = Vector2( 480, 273 )
